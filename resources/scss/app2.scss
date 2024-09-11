@@ -1,0 +1,256 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.recortar
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.pequeño
+{
+    width: 100px
+}
+
+.seccionInicio
+{
+    height: 100%;
+
+    position: fixed;
+    left: 0;
+    z-index: 2;
+}
+
+.seccionFin
+{
+    height: 100%;
+
+    position: fixed;
+    right: 0;
+    z-index: 2;
+}
+
+.menuPrincipal
+{
+    height: 70px;
+
+    background-color: transparent;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.menuPrincipal:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.fondo1
+{
+    background-color: white;
+}
+
+.fondo2
+{
+    background-color: lightgreen;
+}
+
+.fondo3
+{
+    background-color: black;
+}
+
+.negro
+{
+    color: black;
+}
+
+.fijo
+{
+    position: fixed;
+    z-index: 1;
+
+    background-color: white;
+}
+
+.mt-mayor
+{
+    margin-top: 5rem !important
+}
+
+.seccionSubirReceta
+{
+    height: 75%;
+
+    position: absolute;
+    right: 7%;
+    z-index: 1
+}
+
+.seccionSubirReceta2
+{
+    height: 90%;
+
+    position: absolute;
+    right: 7%;
+    z-index: 1
+}
+
+.tamañoBotonSubir
+{
+    height: 37px;
+}
+
+.fotoPerfil {
+    width: 80px;
+    height: 80px;
+}
+
+.fotoPerfil2 {
+    width: 170px;
+    height: 170px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra */
+}
+
+/* Estilo del track (fondo) de la barra de desplazamiento */
+.overflow-y-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del track */
+}
+
+/* Estilo del thumb (parte que se puede arrastrar) de la barra de desplazamiento */
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+    background: #d7d7d7; /* Color del thumb */
+    border-radius: 6px; /* Borde redondeado del thumb */
+}
+
+/* Estilo del thumb al pasar el ratón sobre él */
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color del thumb al pasar el ratón sobre él */
+}
+
+.dividir3
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-items: center;
+}
+
+.custom-cursor {
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.font-size-input
+{
+    font-size: 16px;
+}
+
+.mh-75 {
+    max-height: 250px !important;
+}
+
+.h-65
+{
+    height: 65%;
+}
+
+.pagination {
+
+    button {
+        margin: 0 5px;
+        padding: 9px 15px;
+        cursor: pointer;
+        border: 0px;
+        background-color: white;
+
+        .actived
+        {
+            padding: 9px 15px;
+            cursor: pointer;
+            border: 0px;
+
+            font-weight: bold;
+            background: rgba(0, 121, 255, 0.1) !important;
+            border-radius: 100px;
+        }
+    }
+
+    button:hover
+    {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+}
+
+.izquierda
+{
+    margin-left: 20px;
+}
+
+.pantalla
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:rgba(56, 56, 56, 0.5);
+}
+
+.texto-pequeño
+{
+    font-size: 10px;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #FFF;
+    left: -100px;
+    box-sizing: border-box;
+    animation: shadowRolling 2s linear infinite;
+}
+
+@keyframes shadowRolling {
+    0% {
+        box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    12% {
+        box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    25% {
+        box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    36% {
+        box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+        box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white;
+    }
+    62% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white;
+    }
+    75% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white;
+    }
+    87% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white;
+    }
+    100% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+    }
+}

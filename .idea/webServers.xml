@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aee8b12c-ba43-4778-8aed-d9232b0215f1" name="trassierra" url="http://ftp.iestrassierra.net">
+        <fileTransfer host="ftp.iestrassierra.net" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="5898e93f-90df-46af-9aa3-0466beb8bf90" name="serverBueno" url="http://isp08.netsolutions.es">
+        <fileTransfer host="isp08.netsolutions.es" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
